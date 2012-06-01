@@ -77,5 +77,5 @@
            (cons "\\<\\(beta\\)\\>" 'beta)
            (cons "\\<\\(gamma\\)\\>" 'gamma)
            (cons "\\<\\(delta\\)\\>" 'delta)
-           (cons "\\<\\(lambda\\)\\>" 'lambda)           
+           (cons "\\<\\(lambda\\)\\>" 'lambda))))           
   (add-hook 'scala-mode-hook 'scala-unicode)
