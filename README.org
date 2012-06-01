@@ -1,0 +1,19 @@
+* Introduction
+
+This is the Emacs configuration that [[http://mindcode.org/][I]] use (shamelessly forked from [[http://jcazevedo.net/][Joao Azevedo]]).
+
+* Overview
+
+- Works on the Mac. Recently tested with Emacs-pretest-24.0.94-universal from [[http://emacsformacosx.com/builds][here]].
+
+* Supported languages
+
+- C
+- C++
+- Common Lisp
+- Java
+- Scala
+
+* Colors
+
+- Defaults to [[https://github.com/nhessler/almost-monokai/][Almost Monokai]].

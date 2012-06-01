@@ -1,0 +1,3 @@
+[submodule "vendor/almost-monokay"]
+	path = vendor/almost-monokai
+	url = https://github.com/nhessler/almost-monokai

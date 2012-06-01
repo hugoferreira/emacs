@@ -1,0 +1,25 @@
+(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+(setq org-agenda-files (list "~/org"))
+(add-hook 'org-mode-hook
+          (lambda ()
+            (org-indent-mode t)
+            (visual-line-mode t))
+          t)
+(setq org-todo-keywords
+      (quote ((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d)")
+              (sequence "WAITING(w)" "HOLD(h)" "|" "CANCELLED(c)"))))
+(setq org-todo-keyword-faces
+      (quote (("TODO" :foreground "red" :weight bold)
+              ("NEXT" :foreground "blue" :weight bold)
+              ("STARTED" :foreground "dodger blue" :weight bold)
+              ("DONE" :foreground "forest green" :weight bold)
+              ("WAITING" :foreground "orange" :weight bold)
+              ("HOLD" :foreground "magenta" :weight bold)
+              ("CANCELLED" :foreground "forest green" :weight bold)
+              ("PHONE" :foreground "forest green" :weight bold))))
+(setq org-columns-default-format 
+      "%40ITEM %TODO %5Effort(Effort){:} %6CLOCKSUM")
